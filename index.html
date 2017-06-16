@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JavScript Tabs and Sliding">
+    <meta name="author" content="Bhaskararao Gummidi">
+	<title>JavaScript Sliding</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script src="./assets/js/script.js"></script>
+</head>
+<body>									
+ <div class="tab">								<!-- tab links -->
+  <button class="tablink" onclick="openSlide(event, 'first')">Avaliable</button>
+  <button class="tablink" onclick="openSlide(event, 'second')">Upcoming</button><br>
+  <hr>
+</div>
+<div id="first" class="tabcontent">				<!-- first tab content starting -->
+  <div class="well">
+  	<div class="row firstslide">				<!-- first slide -->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Baby Cycle.jpg" width="250px" height="320px" alt="image" title="Baby Cycle">
+  			<p>Baby Cycle</p><p><b>&#8377;3000</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Bottles.jpg" width="250px" height="320px" alt="image" title="Bottles">
+  			<p>Water Bottles</p><p><b>&#8377;299</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Case Cover.jpg" width="250px" height="320px" alt="image" title="Case Cover">
+  			<p>Iphone Case Cover</p><p><b>&#8377;445</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Flask.jpg" width="250px" height="320px" alt="image" title="Flask">
+  			<p>Tea Flask</p><p><b>&#8377;326</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<div class="row firstslide">				<!-- second slide -->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Green Tea.jpg" width="250px" height="320px" alt="image" title="Green Tea">
+  			<p>Green Tea Pack</p><p><b>&#8377;555</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Helmet.jpg" width="250px" height="320px" alt="image" title="Helmet">
+  			<p>Helmet</p><p><b>&#8377;999</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Pendrive.jpg" width="250px" height="320px" alt="image" title="Pendrive">
+  			<p>Pendrive</p><p><b>&#8377;450</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Antivirus.jpg" width="250px" height="320px" alt="image" title="Antivirus">
+  			<p>Qick Heal Antivirus</p><p><b>&#8377;745</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<div class="row firstslide">				<!-- third slide -->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Mens T-shirt.jpg" width="250px" height="320px" alt="image" title="Mens T-shirt">
+  			<p>Mens T-shirt</p><p><b>&#8377;440</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Gel.jpg" width="250px" height="320px" alt="image" title="Gel">
+  			<p>Hair Gel</p><p><b>&#8377;654</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Home Theatre.jpg" width="250px" height="320px" alt="image" title="Home Theatre">
+  			<p>Home Theatre</p><p><b>&#8377;4999</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Watch.jpg" width="250px" height="320px" alt="image" title="Watch">
+  			<p>Watch</p><p><b>&#8377;1499</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<ul class="pager">
+  		<li class="previous" id="left"><a onclick="changeSlide(-1)">&#10094;</a></li>
+  		<li class="next" id="right"><a onclick="changeSlide(1)">&#10095;</a></li>
+  	</ul>
+  </div>
+</div>									<!-- first tab content ending -->
+<div id="second" class="tabcontent">			<!-- second tab content strting-->
+  <div class="well">
+  	<div class="row secondslide">		<!-- first slide starting-->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/T-shirt.jpg" width="250px" height="320px" alt="image" title="T-shirt">
+  			<p>Girls T-shirt</p><p><b>&#8377;499</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Jewellery.jpg" width="250px" height="320px" alt="image" title="Jewellery">
+  			<p>Jewellery</p><p><b>&#8377;865</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Formal Shoe.jpg" width="250px" height="320px" alt="image" title="Formal Shoes">
+  			<p>Formal Shoes</p><p><b>&#8377;1299</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Glasses.jpg" width="250px" height="320px" alt="image" title="Glasses">
+  			<p>Sun Glasses</p><p><b>&#8377;450</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<div class="row secondslide">		<!-- second slide starting-->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Rucksack.jpg" width="250px" height="320px" alt="image" title="Rucksack">
+  			<p>Travelling Bag</p><p><b>&#8377;5642</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Slippers.jpg" width="250px" height="320px" alt="image" title="Slippers">
+  			<p>Mens Slippers</p><p><b>&#8377;899</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Dress.jpg" width="250px" height="320px" alt="image" title="Girl's Dress">
+  			<p>Child Dress</p><p><b>&#8377;650</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">			
+  			<img src="./assets/images/College Bag.jpg" width="250px" height="320px" alt="image" title="College Bag">
+  			<p>College Bag</p><p><b>&#8377;633</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<div class="row secondslide">		<!-- third slide starting -->
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Bracelet.jpg" width="250px" height="320px" alt="image" title="Bracelet">
+  			<p>Bracelet</p><p><b>&#8377;240</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Shoes.jpg" width="250px" height="320px" alt="image" title="Shoes">
+  			<p>Casual Shoes</p><p><b>&#8377;699</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Style Shoe.jpg" width="250px" height="320px" alt="image" title="Style Shoes">
+  			<p>Style Shoes</p><p><b>&#8377;750</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  		<div class="col-lg-3">
+  			<img src="./assets/images/Bag.jpg" width="250px" height="320px" alt="image" title="Bag">
+  			<p>Womens Hand Bag</p><p><b>&#8377;1000</b></p>
+  			<button class="btn-warning btn-md">Buy now</button>
+  		</div>
+  	</div>
+  	<ul class="pager">
+  		<li class="previous" id="left"><a onclick="changeImage(-1)">&#10094;</a></li>
+  		<li class="next" id="right"><a onclick="changeImage(1)">&#10095;</a></li>
+  	</ul>
+  </div>
+</div>					<!-- second tab content ending -->
+</body>
+</html>

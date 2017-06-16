@@ -1,0 +1,57 @@
+div.tab 
+{
+    overflow: hidden;
+}
+.tablink    /*styling tab buttons*/
+{
+    background-color: inherit;
+    float: left;
+    border:none; 
+    outline: none;
+    cursor: pointer;
+}
+div.tab button:hover  /*buttons on hover*/
+{
+    border-bottom: 2px solid orange;
+}
+.tabcontent         
+{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.pager .previous > a, .pager .next > a   /*placing left and right arrow icons*/
+{
+    margin-top:-20%;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    font-size: 20px;
+}
+.pager a:hover
+{
+    cursor: pointer;
+}
+#right a     /*right arrow icon placing*/
+{
+    margin-left: 610px!important;
+}
+#left a        /*left arrow icon placing*/
+{
+    margin-left: -670px!important;
+}
+hr 
+{
+    margin-top:5px!important;
+    margin-bottom:5px!important;
+}
+.btn-md
+{
+    width: 100%;
+}
+.col-lg-3
+{
+    padding-left: 57px!important;
+    width: 24%!important;
+}
