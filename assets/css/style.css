@@ -10,9 +10,13 @@ div.tab
     outline: none;
     cursor: pointer;
 }
-div.tab button:hover  /*buttons on hover*/
+.tab button:hover  /*buttons on hover*/
 {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid #E77600 !important;
+}
+button.tablink.active
+{
+    border-bottom: 2px solid #E77600 !important;
 }
 .tabcontent         
 {
@@ -28,10 +32,13 @@ div.tab button:hover  /*buttons on hover*/
     z-index: 1;
     display: inline-block;
     font-size: 20px;
+    padding:40px 10px 40px 10px;
+    border-radius: 5px;
 }
-.pager a:hover
+.pager .previous a:hover , .pager .next a:hover
 {
     cursor: pointer;
+    background-color: hotpink;
 }
 #right a     /*right arrow icon placing*/
 {
@@ -54,4 +61,13 @@ hr
 {
     padding-left: 57px!important;
     width: 24%!important;
+}
+.numbertext
+{
+    float: right;
+    font-weight: bold;
+}
+.badge
+{
+    background-color: #f14307!important;
 }

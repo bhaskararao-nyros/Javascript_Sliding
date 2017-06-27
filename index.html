@@ -11,37 +11,43 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<script src="./assets/js/script.js"></script>
 </head>
-<body>									
+<body onload="openSlide(event, 'first')">									
  <div class="tab">								<!-- tab links -->
-  <button class="tablink" onclick="openSlide(event, 'first')">Avaliable</button>
-  <button class="tablink" onclick="openSlide(event, 'second')">Upcoming</button><br>
+  <button class="tablink active" onclick="openSlide(event, 'first')">Avaliable</button>
+  <button class="tablink active" onclick="openSlide(event, 'second')">Upcoming</button><br>
   <hr>
 </div>
 <div id="first" class="tabcontent">				<!-- first tab content starting -->
   <div class="well">
-  	<div class="row firstslide">				<!-- first slide -->
+  	<div class="row firstslide">
+  		<div class="numbertext">1 / 3</div>				<!-- first slide -->
   		<div class="col-lg-3">
   			<img src="./assets/images/Baby Cycle.jpg" width="250px" height="320px" alt="image" title="Baby Cycle">
+  			<span class="badge">Deal of the day</span>
   			<p>Baby Cycle</p><p><b>&#8377;3000</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">
   			<img src="./assets/images/Bottles.jpg" width="250px" height="320px" alt="image" title="Bottles">
+  			<span class="badge">Deal of the day</span>
   			<p>Water Bottles</p><p><b>&#8377;299</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">
   			<img src="./assets/images/Case Cover.jpg" width="250px" height="320px" alt="image" title="Case Cover">
+  			<span class="badge">Deal of the day</span>
   			<p>Iphone Case Cover</p><p><b>&#8377;445</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">
   			<img src="./assets/images/Flask.jpg" width="250px" height="320px" alt="image" title="Flask">
+  			<span class="badge">Deal of the day</span>
   			<p>Tea Flask</p><p><b>&#8377;326</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   	</div>
-  	<div class="row firstslide">				<!-- second slide -->
+  	<div class="row firstslide">
+  		<div class="numbertext">2 / 3</div>				<!-- second slide -->
   		<div class="col-lg-3">
   			<img src="./assets/images/Green Tea.jpg" width="250px" height="320px" alt="image" title="Green Tea">
   			<p>Green Tea Pack</p><p><b>&#8377;555</b></p>
@@ -63,7 +69,8 @@
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   	</div>
-  	<div class="row firstslide">				<!-- third slide -->
+  	<div class="row firstslide">
+  		<div class="numbertext">3 / 3</div>				<!-- third slide -->
   		<div class="col-lg-3">
   			<img src="./assets/images/Mens T-shirt.jpg" width="250px" height="320px" alt="image" title="Mens T-shirt">
   			<p>Mens T-shirt</p><p><b>&#8377;440</b></p>
@@ -91,9 +98,10 @@
   	</ul>
   </div>
 </div>									<!-- first tab content ending -->
-<div id="second" class="tabcontent">			<!-- second tab content strting-->
+<div id="second" class="tabcontent">			<!-- second tab content starting-->
   <div class="well">
-  	<div class="row secondslide">		<!-- first slide starting-->
+  	<div class="row secondslide">
+  		<div class="numbertext">1 / 3</div>		<!-- first slide starting-->
   		<div class="col-lg-3">
   			<img src="./assets/images/T-shirt.jpg" width="250px" height="320px" alt="image" title="T-shirt">
   			<p>Girls T-shirt</p><p><b>&#8377;499</b></p>
@@ -115,29 +123,35 @@
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   	</div>
-  	<div class="row secondslide">		<!-- second slide starting-->
+  	<div class="row secondslide">
+  		<div class="numbertext">2 / 3</div>		<!-- second slide starting-->
   		<div class="col-lg-3">
   			<img src="./assets/images/Rucksack.jpg" width="250px" height="320px" alt="image" title="Rucksack">
+  			<span class="badge">Deal of the day</span>
   			<p>Travelling Bag</p><p><b>&#8377;5642</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">
   			<img src="./assets/images/Slippers.jpg" width="250px" height="320px" alt="image" title="Slippers">
+  			<span class="badge">Deal of the day</span>
   			<p>Mens Slippers</p><p><b>&#8377;899</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">
   			<img src="./assets/images/Dress.jpg" width="250px" height="320px" alt="image" title="Girl's Dress">
+  			<span class="badge">Deal of the day</span>
   			<p>Child Dress</p><p><b>&#8377;650</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   		<div class="col-lg-3">			
   			<img src="./assets/images/College Bag.jpg" width="250px" height="320px" alt="image" title="College Bag">
+  			<span class="badge">Deal of the day</span>
   			<p>College Bag</p><p><b>&#8377;633</b></p>
   			<button class="btn-warning btn-md">Buy now</button>
   		</div>
   	</div>
-  	<div class="row secondslide">		<!-- third slide starting -->
+  	<div class="row secondslide">
+  		<div class="numbertext">3 / 3</div>		<!-- third slide starting -->
   		<div class="col-lg-3">
   			<img src="./assets/images/Bracelet.jpg" width="250px" height="320px" alt="image" title="Bracelet">
   			<p>Bracelet</p><p><b>&#8377;240</b></p>
