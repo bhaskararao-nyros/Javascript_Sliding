@@ -64,3 +64,7 @@ function showSlidey(m)
     }
         y[slideIndex-1].style.display = "block";
 }
+onload(function()
+{
+    $('.first').css("border-bottom", "2px solid #E77600");
+})

@@ -17,6 +17,8 @@ div.tab
 button.tablink.active
 {
     border-bottom: 2px solid #E77600 !important;
+    color: red;
+    font-weight: bold;
 }
 .tabcontent         
 {
